@@ -5,11 +5,13 @@ FROM node:12.16-alpine as builder
 USER root
 
 # Install all needed dependencies
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories
 RUN apk --update add --virtual build-dependencies python build-base ca-certificates && \
 	npm_config_user=root npm install -g lerna
 
 WORKDIR /data
 
+RUN npm config set registry https://registry.npm.taobao.org
 COPY lerna.json .
 COPY package.json .
 COPY packages/cli/ ./packages/cli/
@@ -29,6 +31,7 @@ FROM node:12.16-alpine
 
 USER root
 
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories
 RUN apk add --update graphicsmagick tzdata tini su-exec
 
 WORKDIR /data

@@ -3,7 +3,7 @@
 		<div class="header-side-menu">
 			<span v-if="node">
 				<display-with-change :key-name="'name'" @valueChanged="valueChanged"></display-with-change>
-				<a v-if="nodeType" :href="'http://n8n.io/nodes/' + nodeType.name" target="_blank" class="node-info">
+				<a v-if="nodeType" :href="'https://www.yuque.com/clinico-omics/cow/' + nodeType.name" target="_blank" class="node-info">
 					<el-tooltip class="clickable" placement="top" effect="light">
 						<div slot="content" v-html="'<strong>Node Description:</strong><br />' + nodeTypeDescription + '<br /><br /><strong>For more information and usage examples click!</strong>'"></div>
 						<font-awesome-icon icon="question-circle" />

@@ -15,9 +15,9 @@
 			<el-menu default-active="workflow" @select="handleSelect" :collapse="isCollapsed">
 
 				<el-menu-item index="logo" class="logo-item">
-					<a href="https://n8n.io" target="_blank" class="logo">
-						<img src="/n8n-icon-small.png" class="icon" alt="n8n.io"/>
-						<span class="logo-text" slot="title">n8n.io</span>
+					<a href="https://cow.3steps.cn" target="_blank" class="logo">
+						<img src="/favicon.png" class="icon" alt="cow.3steps.cn"/>
+						<span class="logo-text" slot="title">Clinico Omics Workspace</span>
 					</a>
 				</el-menu-item>
 
@@ -122,7 +122,7 @@
 
 					<el-menu-item index="help-documentation">
 						<template slot="title">
-							<a href="https://docs.n8n.io" target="_blank">
+							<a href="https://www.yuque.com/clinico-omics/cow" target="_blank">
 								<font-awesome-icon icon="book"/>
 								<span slot="title" class="item-title">Documentation</span>
 							</a>
@@ -130,7 +130,7 @@
 					</el-menu-item>
 					<el-menu-item index="help-forum">
 						<template slot="title">
-							<a href="https://community.n8n.io" target="_blank">
+							<a href="https://www.yuque.com/clinico-omics/topics" target="_blank">
 								<font-awesome-icon icon="users"/>
 								<span slot="title" class="item-title">Forum</span>
 							</a>
@@ -138,7 +138,7 @@
 					</el-menu-item>
 					<el-menu-item index="help-examples">
 						<template slot="title">
-							<a href="https://n8n.io/workflows" target="_blank">
+							<a href="http://choppy.3steps.cn/" target="_blank">
 								<font-awesome-icon icon="network-wired"/>
 								<span slot="title" class="item-title">Workflows</span>
 							</a>
@@ -147,7 +147,7 @@
 					<el-menu-item index="help-about">
 						<template slot="title">
 							<font-awesome-icon class="about-icon" icon="info"/>
-							<span slot="title" class="item-title">About n8n</span>
+							<span slot="title" class="item-title">About COW</span>
 						</template>
 					</el-menu-item>
 				</el-submenu>
@@ -480,7 +480,7 @@ export default mixins(
 	position: absolute;
 	z-index: 10;
 	top: 55px;
-	left: 25px;
+	left: 30%;
 	text-align: right;
 	line-height: 24px;
 	height: 20px;
@@ -522,7 +522,7 @@ export default mixins(
 
 		.icon {
 			position: relative;
-			height: 23px;
+			height: 45px;
 			left: -10px;
 			top: -2px;
 		}
@@ -563,7 +563,7 @@ a.logo {
 	width: 65px;
 
 	&.expanded {
-		width: 200px;
+		width: 300px;
 	}
 }
 

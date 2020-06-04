@@ -1,10 +1,10 @@
 <template>
 	<span>
-		<el-dialog class="n8n-about" :visible="dialogVisible" append-to-body width="50%" title="About n8n" :before-close="closeDialog">
+		<el-dialog class="n8n-about" :visible="dialogVisible" append-to-body width="50%" title="About COW" :before-close="closeDialog">
 			<div>
 				<el-row>
 					<el-col :span="8" class="info-name">
-						n8n Version:
+						COW Version:
 					</el-col>
 					<el-col :span="16">
 						{{versionCli}}
@@ -15,7 +15,7 @@
 						Source Code:
 					</el-col>
 					<el-col :span="16">
-						<a href="https://github.com/n8n-io/n8n" target="_blank">https://github.com/n8n-io/n8n</a>
+						<a href="https://github.com/clinico-omics/clinico-omics-workspace" target="_blank">https://github.com/clinico-omics/clinico-omics-workspace</a>
 					</el-col>
 				</el-row>
 				<el-row>
@@ -23,7 +23,7 @@
 						License:
 					</el-col>
 					<el-col :span="16">
-						<a href="https://github.com/n8n-io/n8n/blob/master/packages/cli/LICENSE.md" target="_blank">Apache 2.0 with Commons Clause</a>
+						<a href="https://github.com/clinico-omics/clinico-omics-workspace/blob/master/packages/cli/LICENSE.md" target="_blank">Apache 2.0 with Commons Clause</a>
 					</el-col>
 				</el-row>
 
